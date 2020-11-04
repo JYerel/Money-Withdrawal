@@ -5,5 +5,8 @@
         void NotifyApproachingPayInLimit(string emailAddress);
 
         void NotifyFundsLow(string emailAddress);
+
+        void NotifyTransactionAmount(string emailAddress, decimal transactionAmount);
+
     }
 }

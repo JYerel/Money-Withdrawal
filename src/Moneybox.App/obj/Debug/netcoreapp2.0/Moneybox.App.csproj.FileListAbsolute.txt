@@ -1,0 +1,11 @@
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\bin\Debug\netcoreapp2.0\Moneybox.App.deps.json
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\bin\Debug\netcoreapp2.0\Moneybox.App.dll
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\bin\Debug\netcoreapp2.0\Moneybox.App.pdb
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\obj\Debug\netcoreapp2.0\Moneybox.App.AssemblyInfoInputs.cache
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\obj\Debug\netcoreapp2.0\Moneybox.App.AssemblyInfo.cs
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\obj\Debug\netcoreapp2.0\Moneybox.App.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\obj\Debug\netcoreapp2.0\Moneybox.App.dll
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\obj\Debug\netcoreapp2.0\Moneybox.App.pdb
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\bin\Debug\netcoreapp2.0\Moneybox.App.runtimeconfig.json
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\bin\Debug\netcoreapp2.0\Moneybox.App.runtimeconfig.dev.json
+C:\Users\user\Source\Repos\Money-Withdrawal\src\Moneybox.App\obj\Debug\netcoreapp2.0\Moneybox.App.genruntimeconfig.cache

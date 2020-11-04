@@ -15,9 +15,31 @@ namespace Moneybox.App.Features
             this.notificationService = notificationService;
         }
 
-        public void Execute(Guid fromAccountId, decimal amount)
+        public void Execute(Guid accountHolderId, decimal withdrawAmount)
         {
-            // TODO:
+            var accountHolder = this.accountRepository.GetAccountById(accountHolderId);
+
+            var checkNewBalance = accountHolder.Balance - withdrawAmount;
+            if (checkNewBalance < 0m)
+            {
+                throw new InvalidOperationException("Insufficient funds to make withdrawal");
+            }
+
+            if (checkNewBalance < 500m)
+            {
+                this.notificationService.NotifyFundsLow(accountHolder.User.Email);
+            }
+
+            // New email notification of high transfer Amount 
+            if (withdrawAmount > 3000m)
+            {
+                this.notificationService.NotifyTransactionAmount(accountHolder.User.Email, withdrawAmount);
+            }
+
+            accountHolder.Balance = accountHolder.Balance - withdrawAmount;
+            accountHolder.Withdrawn = accountHolder.Withdrawn - withdrawAmount;
+
+            this.accountRepository.Update(accountHolder);
         }
     }
 }
