@@ -6,6 +6,8 @@ namespace Moneybox.App
     {
         public const decimal PayInLimit = 4000m;
 
+        public const decimal WithdrawnLimit = 10000m;
+
         public Guid Id { get; set; }
 
         public User User { get; set; }

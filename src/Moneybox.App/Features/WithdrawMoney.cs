@@ -30,6 +30,12 @@ namespace Moneybox.App.Features
                 this.notificationService.NotifyFundsLow(accountHolder.User.Email);
             }
 
+            // New validation added, extra security
+            if (withdrawAmount > Account.WithdrawnLimit)
+            {
+                throw new InvalidOperationException("Account withdraw limit reached");
+            }
+
             // New email notification of high transfer Amount 
             if (withdrawAmount > 3000m)
             {
@@ -37,7 +43,7 @@ namespace Moneybox.App.Features
             }
 
             accountHolder.Balance = accountHolder.Balance - withdrawAmount;
-            accountHolder.Withdrawn = accountHolder.Withdrawn - withdrawAmount;
+            accountHolder.Withdrawn = accountHolder.Withdrawn + withdrawAmount;
 
             this.accountRepository.Update(accountHolder);
         }
