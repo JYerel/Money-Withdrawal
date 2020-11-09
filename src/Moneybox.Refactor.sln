@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moneybox.App", "Moneybox.App\Moneybox.App.csproj", "{C1E5082E-45D6-469C-BD08-B87348851443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestAccount", "NUnitTestAccount\NUnitTestAccount.csproj", "{EA307D1D-BC39-4FE0-9AED-71B96E0F28C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTestAccount", "NUnitTestAccount\NUnitTestAccount.csproj", "{EA307D1D-BC39-4FE0-9AED-71B96E0F28C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

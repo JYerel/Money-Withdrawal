@@ -20,43 +20,12 @@ namespace Moneybox.App.Features
             var accountHolder = this.accountRepository.GetAccountById(accountHolderId);
             var accountRecipient = this.accountRepository.GetAccountById(accountRecipientId);
 
-            var checkNewBalance = accountHolder.Balance - transferAmount;
-            if (checkNewBalance < 0m)
-            {
-                throw new InvalidOperationException("Insufficient funds to make transfer");
-            }
+            accountHolder.AccountWithdraw(transferAmount, notificationService);
 
-            var checkNewPaidIn = accountRecipient.PaidIn + transferAmount;
-            if (checkNewPaidIn > Account.PayInLimit)
-            {
-                throw new InvalidOperationException("Account pay in limit reached");
-            }
+            accountRecipient.AccountPaidIn(transferAmount, notificationService);
 
-            if (checkNewBalance < 500m)
-            {
-                this.notificationService.NotifyFundsLow(accountHolder.User.Email);
-            }
-
-            if (Account.PayInLimit - checkNewPaidIn < 500m)
-            {
-                this.notificationService.NotifyApproachingPayInLimit(accountRecipient.User.Email);
-            }
-
-            // New email notification of high transfer Amount, without conflicting with PaidIn
-            if (transferAmount > 3000m)
-            {
-              this.notificationService.NotifyTransactionAmount(accountHolder.User.Email, transferAmount);
-            }
-
-
-            accountHolder.Balance = accountHolder.Balance - transferAmount;
-            accountHolder.Withdrawn = accountHolder.Withdrawn - transferAmount;
-
-            accountRecipient.Balance = accountRecipient.Balance + transferAmount;
-            accountRecipient.PaidIn = accountRecipient.PaidIn + transferAmount;
-
-            this.accountRepository.Update(accountHolder);
-            this.accountRepository.Update(accountRecipient);
+            accountRepository.Update(accountHolder);
+            accountRepository.Update(accountRecipient);
         }
     }
 }

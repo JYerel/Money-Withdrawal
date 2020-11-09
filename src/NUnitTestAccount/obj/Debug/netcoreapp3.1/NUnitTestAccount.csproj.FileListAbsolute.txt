@@ -1,7 +1,6 @@
 C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\obj\Debug\netcoreapp3.1\NUnitTestAccount.csprojAssemblyReference.cache
 C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\obj\Debug\netcoreapp3.1\NUnitTestAccount.AssemblyInfoInputs.cache
 C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\obj\Debug\netcoreapp3.1\NUnitTestAccount.AssemblyInfo.cs
-C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\obj\Debug\netcoreapp3.1\NUnitTestAccount.csproj.CoreCompileInputs.cache
 C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\bin\Debug\netcoreapp3.1\nunit.engine.dll
@@ -96,3 +95,6 @@ C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\obj\Debug\netco
 C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\obj\Debug\netcoreapp3.1\NUnitTestAccount.dll
 C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\obj\Debug\netcoreapp3.1\NUnitTestAccount.pdb
 C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\obj\Debug\netcoreapp3.1\NUnitTestAccount.genruntimeconfig.cache
+C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\user\Source\Repos\Money-Withdrawal\src\NUnitTestAccount\obj\Debug\netcoreapp3.1\NUnitTestAccount.csproj.CoreCompileInputs.cache

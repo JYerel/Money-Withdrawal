@@ -1,31 +1,46 @@
 using System;
+using System.Threading.Tasks;
 using NUnit.Framework;
 using Moneybox.App;
+using Moneybox.App.DataAccess;
+using Moneybox.App.Domain.Services;
 using Moneybox.App.Features;
+using Moq;
 
 namespace NUnitTestAccount
 {
     public class AccountTest
     {
+        private Mock<IAccountRepository> accountServiceMock;
+        private Mock<INotificationService> notificationServiceMock;
+
+        [SetUp]
+        public void SetUp()
+        {
+            Mock<IAccountRepository> accountServiceMock = new Mock<IAccountRepository>();
+            Mock<INotificationService> notificationServiceMock = new Mock<INotificationService>();
+        }
+
         [Test]
         public void Withdraw_Valid_Amount()
         {
             // Arrange
-            var accountTest = new Account()
+            Account accountTest = new Account()
             {
+                User = new User() { Id = Guid.NewGuid(), Name = "Jose Yerel", Email = "test@testing.com"},
+                Balance = 1000m,
                 Id = Guid.NewGuid(),
-                User = new User(),
-                Balance = 1000m
+                PaidIn = 0m,
+                Withdrawn = 0m
             };
 
+            WithdrawMoney withdrawTest = new WithdrawMoney(accountServiceMock.Object, notificationServiceMock.Object);
+
             // Act
-            // var result2 = new WithdrawMoney();
-            // Need a constructor for the test to run but not sure if it's needed or there's another way of doing it 
-            // result2.Execute(accountTest.Id,10);
-            // var result = new WithdrawMoney.Execute(accountTest.Id,accountTest.Withdrawn)
+            withdrawTest.Execute(accountTest.Id, 100);
 
             // Assert
-            // Assert.AreEqual(990, accountTest.Balance);
+            Assert.AreEqual(900, accountTest.Balance);
         }
 
     }
