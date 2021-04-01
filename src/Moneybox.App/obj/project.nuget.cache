@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ndpGB2y5lhbu8YobriQoX/DKt8jxNx3ZnR0AdsnYBI7smbQHCOYaNdahSwLQ695w9Tv9J+oOrLPtzysgPNXQZw==",
+  "dgSpecHash": "8lW3ME6Nfn2qi0ZCRkxLaygRH8yuLzjxXpQVPgiZib3fPB88vND8EijVTLyt9RHESUk+RPvpI7nHzgrMQX4/FQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\Money-Withdrawal\\src\\Moneybox.App\\Moneybox.App.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\Money-Withdrawal\\src\\Moneybox.App\\Moneybox.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app\\2.0.0\\microsoft.netcore.app.2.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.0.0\\microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",

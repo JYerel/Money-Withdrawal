@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Source\\Repos\\Money-Withdrawal\\src\\Moneybox.App\\Moneybox.App.csproj": {}
+    "C:\\Users\\user\\source\\repos\\Money-Withdrawal\\src\\Moneybox.App\\Moneybox.App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Source\\Repos\\Money-Withdrawal\\src\\Moneybox.App\\Moneybox.App.csproj": {
+    "C:\\Users\\user\\source\\repos\\Money-Withdrawal\\src\\Moneybox.App\\Moneybox.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Money-Withdrawal\\src\\Moneybox.App\\Moneybox.App.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\Money-Withdrawal\\src\\Moneybox.App\\Moneybox.App.csproj",
         "projectName": "Moneybox.App",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\Money-Withdrawal\\src\\Moneybox.App\\Moneybox.App.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\Money-Withdrawal\\src\\Moneybox.App\\Moneybox.App.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\Money-Withdrawal\\src\\Moneybox.App\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\Money-Withdrawal\\src\\Moneybox.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +31,7 @@
         },
         "frameworks": {
           "netcoreapp2.0": {
+            "targetAlias": "netcoreapp2.0",
             "projectReferences": {}
           }
         },
@@ -40,6 +43,7 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
+          "targetAlias": "netcoreapp2.0",
           "dependencies": {
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -58,7 +62,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
